@@ -1,0 +1,169 @@
+{{ $baseurl := .Site.BaseURL }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Mathias Conrad - Arts &amp; Publishing</title>
+  <meta name="keywords" content="Conrad, Mathias, Malerei, Grafik, Webdesign" />
+  <meta name="description" content="Mathias Conrad - arts & publishing." />
+  <meta name="robots" content="index, follow" />
+  <link rel="shortcut icon" href="{{$baseurl}}img/favicon.ico" />
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+<body>
+<!-------------- Hero-Container ------------------>
+    <style>
+        .parallax-container{ height: 600px; }
+        #nav {
+                width: 100%;
+                z-index: 9998;
+        }
+    </style>
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <h1 class="header center black-text text-lighten-2"><br />Mathias Conrad</h1>
+                <div class="row center">
+                  <h5 class="header col s12 light">Arts &amp; Publishing</h5>
+                </div>
+                <div class="row center">
+                    <p class="light">Eine kleine Homepage mit einigen meiner Interessen und Ideen - und als Proof-of-Concept für ein auf Serverless Architecture basierendes Content Presentation System.</p>
+                </div>
+                <br><br>
+
+            </div>
+        </div>
+        <div class="parallax"><img src="img/SAM_1113_web.jpg" alt="Leuchtfeuer und Strand"></div>
+    </div>
+
+<!--------------- NAVIGATION ---------------------->
+    {{ partial "navigation.html" . }}
+
+<!-------------- Info-Container ------------------>
+    <div id="info" class="container">
+        <div class="section"><!--  Card Section   -->
+            <div class="row">
+                <!--------------- Card1 of 3-------------------------------------------->
+                <div class="col s12 m6 l3">
+                    <a href="/web/webdesign/" class="black-text">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/05142577_web.jpg" />
+                            <span class="card-title">WEB</span>
+                        </div><!--card image-->
+                        <div class="card-content">
+                            <h5 class="center">Cloud Architectures &amp; Web Design</h5>
+                            <p class="light">
+                                "Cloud" ist heute eine Mode-Begriff und mit vielen Vorurteilen behaftet - und manchmal auch mit unerfüllbaren Erwartungen. 
+								Aber mit einer guten Architektur in Verbindung mit klugem Design ist es möglich, hochperformante und doch preisgünstige Webangebote zu realisieren.
+								Doch die Cloud bietet noch viel mehr...
+                            </p>
+                        </div><!--card content-->
+                    </div><!--card-->
+                    </a>
+                </div> <!--card col--><!--End of Card 1-->
+                <!--------------- Card2 of 4-------------------------------------------->
+                <div class="col s12 m6 l3">
+                    <a href="/malerei/Malerei/" class="black-text">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/Trauer_web.jpg" />
+                            <span class="card-title">MALEREI</span>
+                        </div><!--card image-->
+                        <div class="card-content">
+                            <h5 class="center">Malerei in Öl, Acryl und Aquarell</h5>
+                            <p class="light">
+                                Mehr als ein Hobby, aber nicht kommerziell ausgebeutet: meine Malerei, die leider momentan viel zu kurz kommmt.
+                            </p>
+                        </div><!--card content-->
+                    </div><!--card-->
+                </a>
+                </div> <!--card col--><!--End of Card 2-->
+                <!--------------- Card3 of 4-------------------------------------------->
+                <div class="col s12 m6 l3">
+                    <a href="/fotografie/Fotografie/" class="black-text">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/SAM_1034_web.jpg" />
+                            <span class="card-title">FOTOGRAFIE</span>
+                        </div><!--card image-->
+                        <div class="card-content">
+                            <h5 class="center">Eine Kamera ist immer dabei...</h5>
+                            <p class="light">
+                                Wie die Malerei begleitet mich die Fotografie seit Kindheitstagen, ständig entstehen viele Fotografien...
+                            </p>
+                        </div><!--card content-->
+                    </div><!--card-->
+                    </a>
+                </div> <!--card col--><!--End of Card 3-->
+                <!--------------- Card4 of 4-------------------------------------------->
+                <div class="col s12 m6 l3">
+                    <a href="http://derkleinebaecker.com/" class="black-text">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/Lebkuchen-Apfel-Torte_20151231_160725_web.jpg" />
+                            <span class="card-title">DER KLEINE BÄCKER</span>
+                        </div><!--card image-->
+                        <div class="card-content">
+                            <h5 class="center">Süße &amp; und herzhafte Sachen aus der Backstube</h5>
+                            <p class="light">
+                                Da ich gerne süßes Gebäck vernasche, liegt es nahe auch selber zu backen - und auch herzhafte Dinge wie Brote oder Quiches kommen nie zu kurz.
+                            </p>
+                        </div><!--card content-->
+                    </div><!--card-->
+                    </a>
+                </div> <!--card col--><!--End of Card 4-->
+            </div><!--card row-->
+        </div><!--card section-->
+    </div> <!-- container-->
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">- = -</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/SAM_2238_web.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Kontakt</h4>
+		  <!--------------- Contact Form Partial ---------------------->
+			{{ partial "contact.html" . }}
+		  <!--------------- Contact Form Partial ---------------------->
+          <p class="left-align light">Positive oder konstruktive Kommentare sind mir immer willkommen, nette Kontakte ebenso. 
+		  Werbung oder anderer Spam wird gnadenlos ignoriert.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">- = -</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/06122671_web.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+<!--------------- SeitenFuß ---------------------->
+    {{ partial "footer.html" . }}

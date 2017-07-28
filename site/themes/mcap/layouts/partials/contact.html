@@ -1,0 +1,114 @@
+{{ $baseurl := .Site.BaseURL }}
+<!------ Contact Form Script ---------------------------- ------>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ 	<script type="text/javascript" src="https://cdn.jsdelivr.net/humane.js/3.1.0/humane.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/humane.js/3.1.0/themes/jackedup.css">
+	<script type='text/javascript'>//<![CDATA[
+		$(window).load(function(){
+		// Wait for the HTML document to be loaded completely
+			$(function() {
+				// Retrieve DOM elements and store them
+				var contactForm     = $('#contact-form');
+				var spinArea        = $('#spin-area'); 
+				var formContainer   = $('#form-container');
+				var successContainer= $('#success-container');
+				// Sendefunktion: Formularfelder in JSON-String packen und an SES-ApiGateway senden
+				contactForm.submit(function(e){
+					e.preventDefault();
+					var url = contactForm.attr('action');
+					var formData = "{";
+					var fields = $('#contact-form').serializeArray();
+					jQuery.each( fields, function( i, field ) {
+						formData = formData+JSON.stringify(field.name)+':'+JSON.stringify(field.value)+',';
+					});
+					formData = formData.substr(0,formData.length-1)+'}';
+					console.log("formData: "+formData);				
+					spinArea.removeClass( "inactive" ).addClass( "active" ); // Attach the spinner
+					// Send a POST AJAX request to the URL of form's action
+					$.post(
+						url,
+						formData,
+						function(response, textStatus, jqXHR) {
+							humane.log('Message sent',{ addnCls: 'humane-jackedup-success'});
+							successContainer.fadeIn();
+							formContainer.slideUp();
+							spinArea.removeClass( "active" ).addClass( "inactive" ); // Remove the spinner
+						}
+					)
+					.fail(function(jqXHR, textStatus, errorThrown) {
+							// Sending request to the server has failed
+							// We'll show a notification that something went wrong
+							console.log("FAIL: '"+textStatus+"' Error:"+errorThrown+" ("+jqXHR+")");
+							humane.log("Message fail: '"+textStatus+"' ",{ addnCls: 'humane-jackedup-fail'});
+							spinArea.removeClass( "active" ).addClass( "inactive" ); // Remove the spinner
+					});
+				});
+			});
+		});//]]> 
+	</script>
+<!-------------- Contact Form Container ------------------->
+	<div class="container">
+		<section id="main">
+			<article id="content">
+				<div class="row" style="margin-top:70px;">
+					<div class="col s12 m12 l12">
+						<form id="contact-form" class="form-horizontal" action="https://ur8o8ry0r7.execute-api.eu-west-1.amazonaws.com/production" method="post">
+						  <fieldset>
+							<div id="success-container" class="text-center" style="display:none;">
+							  <p class="lead text-success"><span class="glyphicon glyphicon-ok"></span></p>
+							  <p class="lead">Ihre Nachricht wurde erfolgreich gesendet!</p>
+							</div>
+							<br />
+							<div id="form-container">
+							  <!-- Name input-->
+								<div class="input-field col s6">
+								  <input placeholder="Ihr Name" id="name" name="name" type="text" class="validate" required minlength="4" aria-required="true">
+								  <label for="first_name">Name</label>
+								</div>
+							  <!-- Email input-->
+								<div class="input-field col s6">
+								  <input placeholder="Ihre e-Mail-Adresse" id="email" name="email" type="email" class="validate" required aria-required="true">
+								  <label for="email">e-Mail</label>
+								</div>
+							  <!-- Company input-->
+								<div class="input-field col s6">
+								  <input placeholder="Ihr Firmenname (optional)" id="company" name="company" type="text" class="validate" aria-required="false">
+								  <label for="first_name">Firma</label>
+								</div>
+							  <!-- Subject body -->
+								<div class="input-field col s12">
+								  <input placeholder="Worum geht es Ihnen?" id="subject" name="subject" type="text" class="validate" required minlength="10" aria-required="true">
+								  <label for="message">Betreff</label>
+								</div> 
+							  <!-- Message body -->
+								<div class="input-field col s12">
+								  <textarea id="message" name="message" class="materialize-textarea" required minlength="20" aria-required="true">
+								  </textarea>
+								  <label for="message">Nachricht</label>
+								</div> 
+							  <!-- Form actions -->
+								<div class="col s6 offset-s6">
+									<button class="btn waves-effect waves-light right" type="submit" name="action">Senden<i class="material-icons right">send</i></button>
+									<div id="spin-area" class="preloader-wrapper small right inactive">
+										<div class="spinner-layer spinner-green-only">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						  </fieldset>
+						</form>
+					</div>
+				</div>
+			</article>
+		</section>
+	</div>
+<!--------------- Contact Form End ---------------------->

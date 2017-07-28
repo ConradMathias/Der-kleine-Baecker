@@ -1,0 +1,38 @@
+<br /><h6 style="font-size:1.3em;">Mehr in diesem Thema:</h6>
+<ul style="padding-left:1em;">
+    {{ range .Children }} <!-- range (2) -->
+        <li style="font-size:1.0em;">
+            <i class="material-icons small grey-text" >chevron_right</i>
+            <a href="{{.URL}}" style="vertical-align:40%;" class="grey-text text-darken-2">{{ .Name }} </a>
+        </li>
+        {{ if .HasChildren }}    <!-- has children (2) -->
+        <ul style="padding-left:2em;">
+        {{ range .Children }} <!-- range (3) -->
+            <li style="font-size:0.8em;" >
+                <i class="material-icons tiny grey-text text-darken-2" >arrow_forward</i>
+                <a href="{{.URL}}" style="vertical-align:18%;" class="grey-text text-darken-2">{{ .Name }}</a>
+            </li>
+            {{ if .HasChildren }}    <!-- has children (3) -->
+            <ul style="padding-left:1.5em;">
+                {{ range .Children }}    <!-- range (4) -->
+                    <li style="font-size:0.7em;">
+                        <i class="material-icons tiny  grey-text text-darken-2" >more_horiz</i>
+                        <a href="{{.URL}}" style="vertical-align:30%;"  class="grey-text text-darken-2">{{ .Name }} </a>
+                    </li>
+                    {{ if .HasChildren }}    <!-- has children (4) -->
+                    <ul class="grey-text darken-1">
+                        {{ range .Children }}    <!-- range (5) -->
+                        <li>
+                            <a href="{{.URL}}">{{ .Name }} </a>
+                        </li>
+                        {{ end }}    <!-- range (5) -->
+                    </ul>
+                    {{ end }}    <!-- has children (4) -->
+                {{ end }}    <!-- range (4) -->
+            </ul>
+            {{ end }}    <!-- has children (3) -->
+        {{ end }}     <!-- range (3) -->
+        </ul>
+        {{ end }} <!-- has children (2) -->
+    {{ end }} <!-- range (2) -->
+</ul>
