@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webs on Mathias Conrad - Arts &amp; Publishing</title>
+    <link>/web/</link>
+    <description>Recent content in Webs on Mathias Conrad - Arts &amp; Publishing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Sun, 06 Mar 2016 00:03:21 +0100</lastBuildDate>
+    <atom:link href="/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Web</title>
+      <link>/web/cloud/Cloud/</link>
+      <pubDate>Sun, 06 Mar 2016 00:03:21 +0100</pubDate>
+      
+      <guid>/web/cloud/Cloud/</guid>
+      <description>
+
+&lt;h1 id=&#34;cloud-architekturen:e3a5481e9264755b27547d3da7e127ae&#34;&gt;Cloud-Architekturen&lt;/h1&gt;
+
+&lt;p&gt;Mathias Conrad&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>/web/design/Design/</link>
+      <pubDate>Sun, 06 Mar 2016 00:03:21 +0100</pubDate>
+      
+      <guid>/web/design/Design/</guid>
+      <description>
+
+&lt;h1 id=&#34;web-design:6939488705ec3578625dfe6c1910afcb&#34;&gt;Web-Design&lt;/h1&gt;
+
+&lt;p&gt;Mathias Conrad&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>/web/webdesign/</link>
+      <pubDate>Sun, 06 Mar 2016 00:03:21 +0100</pubDate>
+      
+      <guid>/web/webdesign/</guid>
+      <description>
+
+&lt;h1 id=&#34;web:25575da4eebcec64784026a028166176&#34;&gt;Web&lt;/h1&gt;
+
+&lt;p&gt;Mathias Conrad&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
