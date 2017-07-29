@@ -14,3 +14,10 @@ robots = "index, nofollow"
 # Aquarell
 
 Die meisten meiner Aquarelle entstehen im Urlaub, sind also Impressionen oder Skizzen von Landschaften.
+
+<div class="slider">
+    <ul class="slides">
+        <li>
+        </li>
+    </ul>
+</div>
