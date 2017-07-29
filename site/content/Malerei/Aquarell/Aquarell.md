@@ -19,8 +19,8 @@ Die meisten meiner Aquarelle entstehen im Urlaub, sind also Impressionen oder Sk
     <ul class="slides">
         <li>
             <img class="materialboxed" data-caption="Dangast: Jadebusen bei Ebbe" src="/img/Aquarell/dangast-jadebusen-bei-ebbe-2007-04_465487028_o.jpg" />
-            <div class="caption center-align">
-                <h6 class="light grey-text text-lighten-3">Dangast: Jadebusen bei Ebbe</h5>
+            <div class="center-align">   <!-- class="caption center-align"> -->
+                <h6 class="light black-text text-lighten-3">Dangast: Jadebusen bei Ebbe</h5>
             </div>
         </li>
         <li>
