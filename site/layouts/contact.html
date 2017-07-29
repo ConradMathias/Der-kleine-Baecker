@@ -1,0 +1,147 @@
+{{ $baseurl := .Site.BaseURL }}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="googlebot" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<title>Mathias Conrad - Arts &amp; Publishing | Kontakt</title>
+	<meta name="keywords" content="Conrad, Mathias, Arts, Publishing, Design, Kontakt" />
+	<meta name="description" content="Mathias Conrad - arts & publishing. Kontakt" />
+	<link rel="shortcut icon" href="img/favicon.ico" />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/superhero/bootstrap.min.css">
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/spinjs/1.3.0/spin.min.js"></script>
+    <script type="text/javascript" src="http://fgnass.github.io/spin.js/jquery.spin.js"></script>
+  
+	<script type="text/javascript" src="//cdn.jsdelivr.net/humane.js/3.1.0/humane.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/humane.js/3.1.0/themes/jackedup.css">
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    
+	<script type='text/javascript'>//<![CDATA[
+		$(window).load(function(){
+		// Wait for the HTML document to be loaded completely
+			$(function() {
+
+				// Retrieve DOM elements and store them
+				var contactForm     = $('#contact-form');
+				var spinArea        = $('#spin-area'); 
+				var formContainer   = $('#form-container');
+				var successContainer= $('#success-container');
+				
+				contactForm.submit(function(e){
+					e.preventDefault();
+				
+					var url = contactForm.attr('action');
+					var formData = "{";
+					var fields = $('#contact-form').serializeArray();
+					jQuery.each( fields, function( i, field ) {
+						formData = formData+JSON.stringify(field.name)+':'+JSON.stringify(field.value)+',';
+					});
+					formData = formData.substr(0,formData.length-1)+'}';
+					console.log("formData: "+formData);				
+				
+					spinArea.spin('large'); // Attach the spinner
+					// Send a POST AJAX request to the URL of form's action
+					$.post(
+						url,
+						formData,
+						function(response, textStatus, jqXHR) {
+							humane.log('Message sent',{ addnCls: 'humane-jackedup-success'});
+							successContainer.fadeIn();
+							formContainer.slideUp();
+							spinArea.spin(false); // Remove the spinner
+						}
+					)
+					.fail(function(jqXHR, textStatus, errorThrown) {
+							// Sending request to the server has failed
+							// We'll show a notification that something went wrong
+							console.log("FAIL: '"+textStatus+"' Error:"+errorThrown+" ("+jqXHR+")");
+							humane.log('Message fail: '+textStatus,{ addnCls: 'humane-jackedup-fail'});
+							spinArea.spin(false); // Remove the spinner
+					});
+
+				});
+
+			});
+		});//]]> 
+	</script>
+  
+</head>
+
+<body>
+    <a name="#top"></a>
+    <div id="topimage" class="valign-wrapper truncate" style="height:200px; max-width:100%;
+          background:url('img/contact.png') 50% 50%; background:#EEEEEE;">
+    </div>
+
+<!--------------- NAVIGATION ---------------------->
+    {{ partial "navigation.html" . }}
+
+<!-------------- Form-Container ------------------>
+
+	<div class="container">
+		<div class="row" style="margin-top:70px;">
+		  <div class="col-md-6 col-md-offset-3">
+			<div class="well well-sm">
+			  <form style="background:#FFF; color:#333;" id="contact-form" class="form-horizontal" action="https://ur8o8ry0r7.execute-api.eu-west-1.amazonaws.com/production" method="post">
+			  <fieldset>
+				<h3 class="text-center">e-Mail an Mathias Conrad:</h3>
+				<div id="success-container" class="text-center" style="display:none;">
+				  <p class="lead text-success"><span class="glyphicon glyphicon-ok"></span></p>
+				  <p class="lead">Ihre Nachricht wurde erfolgreich gesendet!</p>
+				</div>
+
+				<div id="form-container">
+
+				  <!-- Name input-->
+				  <div class="form-group">
+					<label class="col-md-3 control-label" for="name">Name</label>
+					<div class="col-md-9">
+					  <input id="name" name="name" type="text" placeholder="Ihr name" class="form-control">
+					</div>
+				  </div>
+
+				  <!-- Email input-->
+				  <div class="form-group">
+					<label class="col-md-3 control-label" for="email">e-Mail</label>
+					<div class="col-md-9">
+					  <input id="email" name="email" type="text" placeholder="Ihre e-Mail-Adresse" class="form-control">
+					</div>
+				  </div>
+
+				  <!-- Message body -->
+				  <div class="form-group">
+					<label class="col-md-3 control-label" for="message">Nachricht</label>
+					<div class="col-md-9">
+					  <textarea class="form-control" id="message" name="message" placeholder="Bitte geben Sie Ihre Nachricht hier ein..." rows="5"></textarea>
+					</div>
+				  </div>
+
+				  <!-- Form actions -->
+				  <div class="form-group">
+					<div class="col-md-12 text-right" id="spin-area">
+					  <button type="submit" class="btn btn-primary btn-lg">Senden</button>
+					</div>
+				  </div>
+				</div>
+			  </fieldset>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+<!--------------- SEITENFUSS ---------------------->
+{{ partial "footer.html" . }}
+
