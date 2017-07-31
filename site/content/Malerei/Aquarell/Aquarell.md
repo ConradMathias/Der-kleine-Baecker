@@ -24,8 +24,8 @@ Die meisten meiner Aquarelle entstehen im Urlaub, sind also Impressionen oder Sk
             </div>
         </li>
         <li>
-            <img   data-position="bottom"data-caption="Wilhelmshaven: Drehbrücke" src="/img/Aquarell/wilhelmshaven-2003_465516701_o.jpg" />
-            <div class="caption center-align"> 
+            <img data-caption="Wilhelmshaven: Drehbrücke" src="/img/Aquarell/wilhelmshaven-2003_465516701_o.jpg" />
+            <div class="leftaaa-align"> 
                 <h6 class="dark black-text text-lighten-3">Wilhelmshaven: Drehbrücke</h6>
             </div>
         </li>
