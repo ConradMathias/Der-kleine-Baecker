@@ -10,7 +10,7 @@ robots = "index, nofollow"
     parent="Malerei"
 
 +++
-{{ $.Scratch.Set "ImgBaseUrl" https://c5oxfg2c.cloudimg.io/fit/400x400/none/_mcap_/ }}
+{{ $.Scratch.Set "ImgBaseUrl" "https://c5oxfg2c.cloudimg.io/fit/400x400/none/_mcap_/" }}
 
 # Aquarell
 
