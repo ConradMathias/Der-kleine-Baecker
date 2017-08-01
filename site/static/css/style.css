@@ -67,10 +67,10 @@ footer.page-footer {
 
 .slider .slides li .caption {
   color: #fff;
-  background-color: white;
+  background-color: rgba(250, 250, 250, 0.75);
   position: absolute;
-  top: 90%;                  
-  left: 15%;
+  top: 92%;                  
+  left: 5%;
   width: 90%;
   opacity: 0;
 }
