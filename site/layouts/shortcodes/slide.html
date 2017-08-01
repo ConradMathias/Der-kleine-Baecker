@@ -1,18 +1,14 @@
-<!-- image -->
-<figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
-    {{ with .Get "link"}}<a href="{{.}}">{{ end }}
-        <img src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}"{{ end }} />
-    {{ if .Get "link"}}</a>{{ end }}
-    {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
-    <figcaption>{{ if isset .Params "title" }}
-        <h4>{{ .Get "title" }}</h4>{{ end }}
-        {{ if or (.Get "caption") (.Get "attr")}}<p>
-        {{ .Get "caption" }}
-        {{ with .Get "attrlink"}}<a href="{{.}}"> {{ end }}
-            {{ .Get "attr" }}
-        {{ if .Get "attrlink"}}</a> {{ end }}
-        </p> {{ end }}
-    </figcaption>
+<!-- slide -->
+    {{ if .Get "src"}}
+        <li>
+            {{ with .Get "link"}}<a href="{{.}}">{{ end }}
+            <img {{ if isset .Params "title" }}data-caption="{{ .Get "title" }}"{{ end }} src="/img/Aquarell/dangast-jadebusen-bei-ebbe-2007-04_465487028_o.jpg" />
+            {{ if .Get "link"}}</a>{{ end }}
+            {{ if isset .Params "title" }}
+            <div class="caption center-align">
+                <h6 class="dark black-text text-lighten-3">{{ .Get "title" }}</h6>
+            </div>
+            {{ end }}
+        </li>
     {{ end }}
-</figure>
-<!-- image -->
+<!-- slide -->
