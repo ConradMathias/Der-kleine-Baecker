@@ -2,7 +2,7 @@
     {{ isset .Params "src" }}
         <li>
             {{ with .Get "link"}}<a href="{{.}}">{{ end }}
-            <img {{ if isset .Params "title" }}data-caption="{{ .Get "title" }}"{{ end }} src="{{ .Get "src" }}" />
+            <img {{ if isset .Params "title" }}data-caption="{{ .Get "title" }}"{{ end }} src="{{ $.Scratch.Get "ImgBaseUrl" }}{{ .Get "src" }}" />
             {{ if .Get "link"}}</a>{{ end }}
             {{ if isset .Params "title" }}
             <div class="caption center-align">
