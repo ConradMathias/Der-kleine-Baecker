@@ -1,8 +1,8 @@
 <!-- slide -->
-        {{ if .Get "src"}}
+    {{ isset .Params "src" }}
         <li>
             {{ with .Get "link"}}<a href="{{.}}">{{ end }}
-            <img {{ if isset .Params "title" }}data-caption="{{ .Get "title" }}"{{ end }} src="{{ $.Scratch.Get "ImgBaseUrl" }}Aquarell/dangast-jadebusen-bei-ebbe-2007-04_465487028_o.jpg" />
+            <img {{ if isset .Params "title" }}data-caption="{{ .Get "title" }}"{{ end }} src="{{ .Get "src" }}" />
             {{ if .Get "link"}}</a>{{ end }}
             {{ if isset .Params "title" }}
             <div class="caption center-align">
