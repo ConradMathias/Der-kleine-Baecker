@@ -55,3 +55,23 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.slider .slides li img {
+  height: 100%;
+  width: 100%;
+  background-size: contain;   //war: cover
+  background-position: center;
+}
+
+.slider .slides li .caption {
+  color: #fff;
+  position: absolute;
+  top: 85%;                   //war: 15%
+  left: 15%;
+  width: 70%;
+  opacity: 0;
+}
+
+.slider .slides li .caption p {
+  color: #e0e0e0;
+}
