@@ -59,17 +59,18 @@ footer.page-footer {
 .slider .slides li img {
   height: 100%;
   width: 100%;
-  background-size: contain;   //war: cover
+  background-size: contain;   
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .slider .slides li .caption {
   color: #fff;
   position: absolute;
-  top: 85%;                   //war: 15%
+  top: 95%;                  
   left: 15%;
-  width: 70%;
-  opacity: 0;
+  width: 90%;
+  opacity: 50;
 }
 
 .slider .slides li .caption p {
