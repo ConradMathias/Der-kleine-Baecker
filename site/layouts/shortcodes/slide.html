@@ -1,7 +1,7 @@
 <!-- slide -->
         <li>
                 {{ with .Get "link"}}<a href="{{.}}">{{ end }}
-                <img {{ with .Get "title" }}data-caption="{{ . }}"{{ end }} src="{{ .Get "ImgBaseUrl" }}{{ .Get "src" }}" height="400" />
+                <img {{ with .Get "title" }}data-caption="{{ . }}"{{ end }} src="{{ .Get "ImgBaseUrl" }}{{ .Get "src" }}" />
                 {{ if .Get "link"}}</a>{{ end }}
                 {{ with .Get "title" }}<div class="caption center-align"><h6 class="dark black-text text-lighten-3">{{ . }}</h6></div>{{ end }}
         </li>
