@@ -1,13 +1,13 @@
 +++
 date = "2016-03-06T00:03:21+01:00"
-title = "Zenco"
+title = "Zenko"
 image = "webheader.jpg"
 [menu.main]
-    name="Zenco"
+    name="Zenko"
     parent="Musik"
 +++
 
-# Zenco - Tonguedrum
+# Zenko - Tonguedrum
 
 Als weiteres Instrument spiele eine sogenannte "Tongue Drum", bei der die Töne durch Anschlagen von Stahlzungen an einem Resonanzkörper erzeugt werden.
 
