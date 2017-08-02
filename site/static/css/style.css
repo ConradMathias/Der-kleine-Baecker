@@ -96,6 +96,6 @@ footer.page-footer {
   text-align: center;
   left: 0;
   right: 0;
-  bottom: 10;
-  margin: 0;
+  bottom: 0;
+  margin: 20,0;
 }
