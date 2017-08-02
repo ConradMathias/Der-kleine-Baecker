@@ -65,8 +65,8 @@ footer.page-footer {
 .slider .slides {
   background-color: #efefef;
   margin: 0;
-  margin-bottom: 1a0px;
-  height: 420px;
+  margin-bottom: 10px;
+  height: 400px;
 }
 
 .slider .slides li img {
