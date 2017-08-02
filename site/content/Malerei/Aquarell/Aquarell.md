@@ -15,8 +15,8 @@ robots = "index, nofollow"
 
 Die meisten meiner Aquarelle entstehen im Urlaub, sind also Impressionen oder Skizzen von Landschaften.
 
-<div class="slider">
-    <ul class="slides">
+<div class="slider" style="Height:500px;">
+    <ul class="slides" style="Height:420px;">
         {{< slide src="aquarell/2007_04+-+Dangast+bei+Ebbe.jpg" title="Dangast, Jadebusen bei Ebbe (April 2007)" ImgBaseUrl="https://s3.eu-central-1.amazonaws.com/images.mcap.de/" >}}           
         {{< slide src="aquarell/2007_04+-+Am+Dangaster+Kurhaus.jpg" title="Dangast, Strand vor dem Kurhaus (April 2007)" ImgBaseUrl="https://s3.eu-central-1.amazonaws.com/images.mcap.de/" >}}           
          {{< slide src="aquarell/2006_07+-+Seezeichen+Otterndorf.jpg" title="Otterndorf, Seezeichen am Elbeufer (Juli 2006)" ImgBaseUrl="https://s3.eu-central-1.amazonaws.com/images.mcap.de/" >}}           
