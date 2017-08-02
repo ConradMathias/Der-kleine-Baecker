@@ -56,10 +56,16 @@ footer.page-footer {
   margin: 0;
 }
 
+.slider {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+
 .slider .slides {
   background-color: #efefef;
   margin: 0;
-  height: 400px;
+  height: 500px;
 }
 
 .slider .slides li img {
@@ -83,4 +89,13 @@ footer.page-footer {
 
 .slider .slides li .caption p {
   color: #e0e0e0;
+}
+
+.slider .indicators {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 10;
+  margin: 0;
 }
