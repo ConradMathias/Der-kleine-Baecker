@@ -1,7 +1,7 @@
 +++
 date = "2016-05-11T14:03:21+01:00"
 title = "Web"
-image = "webheader.jpg"
+image = "Friesenschnitten-20120827_1406421.png"
 [menu.main]
     name="Web"
 	weight=10
