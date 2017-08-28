@@ -33,7 +33,7 @@
                   <h5 class="header col s12 light">Mathias COnrad</h5>
                 </div>
                 <div class="row center">
-                    <p class="light">{{ partial "index.about.html" . }}Eine kleine Homepage mit einigen meiner Interessen und Ideen - und als Proof-of-Concept für ein auf Serverless Architecture basierendes Content Presentation System.</p>
+                    <p class="light">{{ partial "index.about.html" . }}</p>
                 </div>
                 <br><br>
 
@@ -51,22 +51,7 @@
             <div class="row">
                 <!--------------- Card1 of 3-------------------------------------------->
                 <div class="col s12 m6 l3">
-                    <a href="/web/webdesign/" class="black-text">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/05142577_web.jpg" />
-                            <span class="card-title">WEB</span>
-                        </div><!--card image-->
-                        <div class="card-content">
-                            <h5 class="center">Cloud Architectures &amp; Web Design</h5>
-                            <p class="light">
-                                "Cloud" ist heute eine Mode-Begriff und mit vielen Vorurteilen behaftet - und manchmal auch mit unerfüllbaren Erwartungen. 
-								Aber mit einer guten Architektur in Verbindung mit klugem Design ist es möglich, hochperformante und doch preisgünstige Webangebote zu realisieren.
-								Doch die Cloud bietet noch viel mehr...
-                            </p>
-                        </div><!--card content-->
-                    </div><!--card-->
-                    </a>
+		    {{ partial "index.card1.html" . }}	
                 </div> <!--card col--><!--End of Card 1-->
                 <!--------------- Card2 of 4-------------------------------------------->
                 <div class="col s12 m6 l3">
