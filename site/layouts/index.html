@@ -49,60 +49,21 @@
     <div id="info" class="container">
         <div class="section"><!--  Card Section   -->
             <div class="row">
-                <!--------------- Card1 of 3-------------------------------------------->
+                <!--------------- Card1 of 4-------------------------------------------->
                 <div class="col s12 m6 l3">
 		    {{ partial "index.card1.html" . }}	
                 </div> <!--card col--><!--End of Card 1-->
                 <!--------------- Card2 of 4-------------------------------------------->
                 <div class="col s12 m6 l3">
-                    <a href="/malerei/Malerei/" class="black-text">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/Trauer_web.jpg" />
-                            <span class="card-title">MALEREI</span>
-                        </div><!--card image-->
-                        <div class="card-content">
-                            <h5 class="center">Malerei in Öl, Acryl und Aquarell</h5>
-                            <p class="light">
-                                Mehr als ein Hobby, aber nicht kommerziell ausgebeutet: meine Malerei, die leider momentan viel zu kurz kommmt.
-                            </p>
-                        </div><!--card content-->
-                    </div><!--card-->
-                </a>
+                    {{ partial "index.card2.html" . }}
                 </div> <!--card col--><!--End of Card 2-->
                 <!--------------- Card3 of 4-------------------------------------------->
                 <div class="col s12 m6 l3">
-                    <a href="/fotografie/Fotografie/" class="black-text">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/SAM_1034_web.jpg" />
-                            <span class="card-title">FOTOGRAFIE</span>
-                        </div><!--card image-->
-                        <div class="card-content">
-                            <h5 class="center">Eine Kamera ist immer dabei...</h5>
-                            <p class="light">
-                                Wie die Malerei begleitet mich die Fotografie seit Kindheitstagen, ständig entstehen viele Fotografien...
-                            </p>
-                        </div><!--card content-->
-                    </div><!--card-->
-                    </a>
+                    {{ partial "index.card3.html" . }}
                 </div> <!--card col--><!--End of Card 3-->
                 <!--------------- Card4 of 4-------------------------------------------->
                 <div class="col s12 m6 l3">
-                    <a href="http://derkleinebaecker.com/" class="black-text">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/Lebkuchen-Apfel-Torte_20151231_160725_web.jpg" />
-                            <span class="card-title">DER KLEINE BÄCKER</span>
-                        </div><!--card image-->
-                        <div class="card-content">
-                            <h5 class="center">Süße &amp; und herzhafte Sachen aus der Backstube</h5>
-                            <p class="light">
-                                Da ich gerne süßes Gebäck vernasche, liegt es nahe auch selber zu backen - und auch herzhafte Dinge wie Brote oder Quiches kommen nie zu kurz.
-                            </p>
-                        </div><!--card content-->
-                    </div><!--card-->
-                    </a>
+                    {{ partial "index.card4.html" . }}
                 </div> <!--card col--><!--End of Card 4-->
             </div><!--card row-->
         </div><!--card section-->
