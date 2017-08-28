@@ -1,8 +1,8 @@
-# Victor Hugo
+# MCAP.DE WebSite based on Victor Hugo and generated using netlify
 
-**A [Hugo](https://gohugo.io/) boilerplate for creating truly epic websites**
+** based on a [Hugo](https://gohugo.io/) boilerplate for creating truly epic websites**
 
-This is a boilerplate for using Hugo as a static site generator and Gulp + Webpack as your
+This is based on a boilerplate for using Hugo as a static site generator and Gulp + Webpack as the
 asset pipeline.
 
 It's setup to use post-css and babel for CSS and JavaScript.
