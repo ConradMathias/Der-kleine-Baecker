@@ -1,4 +1,4 @@
-# MCAP.DE WebSite based on Victor Hugo and generated using netlify
+# "Der kleine Bäcker" - WebSite based on Victor Hugo and generated using netlify
 
 ** based on a [Hugo](https://gohugo.io/) boilerplate for creating truly epic websites**
 
