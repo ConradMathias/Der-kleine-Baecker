@@ -112,12 +112,12 @@ footer.page-footer {
 
 @media print {
   footer.page-footer {
-    display: none;
+    display: none !important;
   }
   div#nav {
-    display: none;
+    display: none !important;
   }
   div#marginalnav {
-    display: none;
+    display: none !important;
   }
 }
