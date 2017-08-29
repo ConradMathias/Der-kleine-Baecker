@@ -14,131 +14,21 @@ Für eine 26cm Springform
 
 ### Zutaten für den Boden:
 
-<table border="0">
-  <tr>
-    <td>
-      100 g
-    </td>
-    
-    <td>
-      Löffelbiskuits
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      50 g
-    </td>
-    
-    <td>
-      gemahlene geschälte Mandeln
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      25 g
-    </td>
-    
-    <td>
-      Zartbitter-Kuvertüre
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      120 g
-    </td>
-    
-    <td>
-      Butter
-    </td>
-  </tr>
-</table>
+- 100 g Löffelbiskuits
+- 50 g gemahlene geschälte Mandeln
+- 25 g Zartbitter-Kuvertüre
+- 120 g Butter
 
 ### Zutaten für den Belag:
 
-<table border="0">
-  <tr>
-    <td>
-      200 g
-    </td>
-    
-    <td>
-      Frischkäse extra leicht (z.B. 0,2%)
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      200 g
-    </td>
-    
-    <td>
-      Magerquark
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      200 g
-    </td>
-    
-    <td>
-      Schlagsahne
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      1 Pk.
-    </td>
-    
-    <td>
-      Paradiescreme Zitrone
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      2 Pk.
-    </td>
-    
-    <td>
-      Sahnesteif
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      2 Pk.
-    </td>
-    
-    <td>
-      Tortenguss rot
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      2 x 50 ml
-    </td>
-    
-    <td>
-      Roses Lime Juice
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      min. 500g
-    </td>
-    
-    <td>
-      frische Erdbeeren
-    </td>
-  </tr>
-</table>
+- 200 g Frischkäse extra leicht (z.B. 0,2%)
+- 200 g Magerquark
+- 200 g Schlagsahne
+- 1 Pk. Paradiescreme Zitrone
+- 2 Pk. Sahnesteif
+- 2 Pk. Tortenguss rot
+- 2 x 50 ml Roses Lime Juice
+- min. 500g frische Erdbeeren
 
 ### Zubereitung
 
