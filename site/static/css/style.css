@@ -20,6 +20,10 @@ h1, h2, h3 {
   font-family: 'Courgette', cursive;
 }
 
+.nav-wrapper {
+   max-width: 1280px;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
