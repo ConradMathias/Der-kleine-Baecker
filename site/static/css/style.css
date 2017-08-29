@@ -12,6 +12,10 @@ body {
   box-shadow: 6px 10px 25px 5px #aaa;
 }
 
+.container {
+  width: 90%
+}
+
 h1, h2, h3 {
   font-family: 'Courgette', cursive;
 }
