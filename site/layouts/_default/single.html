@@ -6,6 +6,9 @@
         <article id="content">
             <div class="row">
                 <div class="col s12 m12 l8">
+                    {{ if isset .Params "contentimage" }}
+                          <img src="{{$baseurl}}/img/{{ printf "%s" $.Params.contentimage }}">
+                    {{ end }}
                     {{ .Content }}
                     <br />&nbsp;<br/>&nbsp;<br/>
                     <div id="date" style="font-size: 0.8em; Text-align:right;">
