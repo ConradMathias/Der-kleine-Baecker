@@ -1,5 +1,5 @@
 +++
-date = 
+date = "2017-08-29"
 title = "Sommerliche Torten"
 image = "Friesenschnitten-20120827_1406421.png"
 [menu.main]
