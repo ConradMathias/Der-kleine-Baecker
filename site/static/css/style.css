@@ -109,3 +109,12 @@ footer.page-footer {
   bottom: 0;
   margin: 0;
 }
+
+@media not screen {
+  footer #page-footer {
+    display: none;
+  }
+  .marginalnav {
+    display: none;
+  }
+}
