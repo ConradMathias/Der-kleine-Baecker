@@ -12,6 +12,10 @@ body {
   box-shadow: 6px 10px 25px 5px #aaa;
 }
 
+h1, h2, h3 {
+  font-family: 'Courgette', cursive;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
