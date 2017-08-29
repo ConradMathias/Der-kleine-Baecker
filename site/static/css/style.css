@@ -118,6 +118,6 @@ footer.page-footer {
   footer, nav, #marginalnav {
     display: none !important;
   }
-  div#topimage {background:#eee url('');}
+  #topimage {background: url('') #eee;}
   h1.header {margin-left:50px;}
 }
