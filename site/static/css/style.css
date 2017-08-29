@@ -114,4 +114,6 @@ footer.page-footer {
   footer, nav, #marginalnav {
     display: none !important;
   }
+  div#topimage {margin-top: 50px}
+  h1.header {margin-top:-200px;}
 }
