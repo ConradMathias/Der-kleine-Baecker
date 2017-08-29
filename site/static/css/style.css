@@ -110,7 +110,7 @@ footer.page-footer {
   margin: 0;
 }
 
-@media not screen {
+@media print {
   footer.page-footer {
     display: none;
   }
