@@ -111,10 +111,13 @@ footer.page-footer {
 }
 
 @media not screen {
-  footer #page-footer {
+  footer.page-footer {
     display: none;
   }
-  .marginalnav {
+  div#nav {
+    display: none;
+  }
+  div#marginalnav {
     display: none;
   }
 }
