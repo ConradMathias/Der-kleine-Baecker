@@ -12,8 +12,13 @@ body {
   box-shadow: 6px 10px 25px 5px #aaa;
 }
 
-h5.header {
-  text-shadow: 1px 1px 8px #888;
+h5.light {
+  text-shadow: 1px 1px 2px #888;
+}
+
+div#index-banner p.light {
+  background-color: #ddd;
+  background-blend-mode: color-burn;
 }
 
 nav ul a,
