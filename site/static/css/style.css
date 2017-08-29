@@ -111,13 +111,7 @@ footer.page-footer {
 }
 
 @media print {
-  footer.page-footer {
-    display: none !important;
-  }
-  div#nav {
-    display: none !important;
-  }
-  div#marginalnav {
+  footer, nav, #marginalnav {
     display: none !important;
   }
 }
