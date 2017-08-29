@@ -115,9 +115,7 @@ footer.page-footer {
 }
 
 @media print {
-  footer, nav, #marginalnav {
+  footer, nav, #marginalnav, #topimage {
     display: none !important;
   }
-  #topimage {background: url('') #eee;}
-  h1.header {margin-left:50px;}
 }
