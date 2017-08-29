@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col s12 m12 l8">
                     {{ if isset .Params "contentimage" }}
-                          <img src="{{$baseurl}}/img/{{ printf "%s" $.Params.contentimage }}">
+                          <img src="{{$baseurl}}img/{{ printf "%s" $.Params.contentimage }}">
                     {{ end }}
                     {{ .Content }}
                     <br />&nbsp;<br/>&nbsp;<br/>
@@ -20,7 +20,7 @@
                     <div class="card">
                         <div class="card-image">
                           {{ if isset .Params "navimage" }}
-                          <img src="{{$baseurl}}/img/{{ printf "%s" $.Params.navimage }}">
+                          <img src="{{$baseurl}}img/{{ printf "%s" $.Params.navimage }}">
                           <!--span class="card-title">Card Title</span-->
                           {{ end }}
                         </div>
