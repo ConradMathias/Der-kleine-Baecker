@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col s12 m12 l8">
                     {{ if isset .Params "contentimage" }}
-                          <img src="{{$baseurl}}img/{{ printf "%s" $.Params.contentimage }}" style="width:70%;">
+                          <img src="{{$baseurl}}img/{{ printf "%s" $.Params.contentimage }}" style="width:80%; margin-top:2em;">
                     {{ end }}
                     {{ .Content }}
                     <br />&nbsp;<br/>&nbsp;<br/>
