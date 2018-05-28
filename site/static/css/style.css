@@ -20,6 +20,10 @@ h1, h2, h3 {
   font-family: 'Courgette', cursive;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 .nav-wrapper {
    max-width: 1280px;
 }
