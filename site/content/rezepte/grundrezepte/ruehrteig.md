@@ -12,7 +12,8 @@ image = "Friesenschnitten-20120827_1406421.png"
 
 ## Zutaten
 
-|----------|----------
+| Menge | Zutat
+| ---------- | ----------
 | 125 g | Butter
 | 175 g | Mehl
 | 80 g | Zucker
